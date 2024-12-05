@@ -35,28 +35,28 @@ def main():
 
     # PT 1:
 
-    cum = 0
+    cumm = 0
     for report in reports:
-        old_cum = cum
+        old_cumm = cumm
         if not is_gap_less_than_four(report): 
             continue
-        cum += is_ascending(report) 
-        cum += is_descending(report)
+        cumm += is_ascending(report) 
+        cumm += is_descending(report)
 
         """
-        if cum != old_cum:
+        if cumm != old_cumm:
             print(f"{report}")
         """
 
-    print(f"PT 1: {cum}")
+    print(f"PT 1: {cumm}")
 
     # PT 2:
 
-    cum = 0
+    cumm = 0
     for report in reports:
-        cum += check_with_dampening(report)
+        cumm += check_with_dampening(report)
 
 
-    print(f"PT 2: {cum}")
+    print(f"PT 2: {cumm}")
         
 main()

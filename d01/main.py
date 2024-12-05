@@ -14,11 +14,11 @@ def main():
     left.sort()
     right.sort()
 
-    cum = 0
+    cumm = 0
     for l, r in zip(left, right):
-        cum += abs(l-r)
+        cumm += abs(l-r)
 
-    print(f"Pt 1: {cum}")
+    print(f"Pt 1: {cumm}")
 
 
     # PT 2:
@@ -31,12 +31,12 @@ def main():
         else:
             r_counts[n] += 1
 
-    cum = 0
+    cumm = 0
     for n in left:
         if n in r_counts:
-            cum += n*r_counts[n]
+            cumm += n*r_counts[n]
 
-    print(f"Pt 2: {cum}")
+    print(f"Pt 2: {cumm}")
 
 
     
